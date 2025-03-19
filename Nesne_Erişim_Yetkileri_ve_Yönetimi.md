@@ -1,4 +1,5 @@
 # **Nesne Erişim Yetkileri ve Yönetimi**
+Linux işletim sisteminde her dosya ve dizin, belirli bir kullanıcı ve grup tarafından sahiplenilir ve belirli erişim izinleriyle korunur. Bu erişim izinleri, sistemdeki kullanıcıların hangi işlemleri gerçekleştirebileceğini belirleyen temel güvenlik mekanizmalarından biridir.
 
 ## **Nesneler ve Aitlikleri**
 - Dosya ve dizinlerin (objelerin) erişim yetkileri ls -l <nesne> komutuyla görüntülenebilir.
@@ -13,7 +14,7 @@ Aşağıdaki görselde, listedeki tüm nesnelerin (sırasıyla) master kullanıc
 
 ![1](Resimler/nesnekul.png)
 
-- Aitlik, chown user:group <nesne> komutuyla    değiştirilir. 
+- Aitlik `chown user:group <nesne>` komutuyla    değiştirilir. 
 
 ![1](Resimler/n1.png)
 
@@ -108,7 +109,7 @@ Octal-Mode’da görebileceğiniz, kullanabileceğiniz toplam 7 tane olasılık 
 | **-w-** | 0 + 2 + 0 | 2 |
 | **--x** | 0 + 0 + 1 | 1 |
 
-Her bir rakam, bir bölümü temsil edecektir. (Sayı tüm bölümleritemsil eder.)
+Her bir rakam, bir bölümü temsil edecektir. (Sayı tüm bölümleri temsil eder.)
 
 ```
 chmod 777 test.txt
